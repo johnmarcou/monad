@@ -497,7 +497,7 @@ Node::SharedPtr UpdateAux::do_update(
     [[maybe_unused]] auto const curr_slow_writer_offset =
         physical_to_virtual(node_writer_slow->sender().offset());
     LOG_INFO_CFORMAT(
-        "Finish upserting version %lu. Min valid version %lu. Time elapsed: "
+        "Finish upserting the version %lu. Min valid version %lu. Time elapsed: "
         "%ld us. Disk usage: %.4f. Chunks: %u fast, %u slow, %u free. Writer "
         "offsets: fast={%u,%u}, slow={%u,%u}. Compaction head offset fast=%u, "
         "slow=%u",
